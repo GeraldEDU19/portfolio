@@ -180,11 +180,12 @@ h3 i {
   color: var(--accent-color);
 }
 
-/* About section larger text */
+/* About section larger text with justified alignment */
 #about p {
   font-size: 1.25rem;
   line-height: 1.8;
   margin-bottom: 1.5rem;
+  text-align: justify;
 }
 
 /* Project info text size improvements */
@@ -426,6 +427,13 @@ ul {
   color: var(--primary-light);
   border: 1px solid rgba(10, 132, 255, 0.2);
 }
+
+/* Express.js tag styling */
+.tag.express {
+  background: rgba(68, 68, 68, 0.15);
+  border: 1px solid rgba(68, 68, 68, 0.2);
+}
+
 
 /* Responsive adjustments */
 @media (max-width: 480px) {
@@ -673,8 +681,10 @@ input:focus, textarea:focus {
   font-weight: 500;
   display: flex;
   justify-content: space-around;
-  min-width: 120px; /* Reduced from 150px */
+  min-width: auto; /* Reduced from 150px */
   width: auto;
+  gap: 10px;
+  align-items: center;
 }
 
 #experience .tag i {
